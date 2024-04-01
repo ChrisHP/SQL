@@ -1,3 +1,5 @@
 BEGIN TRANSACTION;
-DELETE FROM Books where book_id=101;
+DELETE FROM Books where book_id=103;
+SAVEPOINT sp1;
+ROLLBACK to sp1;
 COMMIT;
