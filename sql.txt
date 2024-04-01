@@ -1,9 +1,2 @@
-create TABLE Books (book_id integer PRIMARY KEY, 
-                    title varchar(50) not NULL, 
-                    author varchar(50),
-                    genre varchar(15) NOT NULL,
-                    published_year integer NOT NULL,
-                    isbn integer NOT NULL,
-                    price float NOT NULL,
-                    rating float,
-                    stock_count INTEGER NOT NULL);
+ALTER TABLE Books ADD COLUMN publisher varchar(20) NOT NULL;
+ALTER TABLE Books ADD COLUMN pages integer NOT NULL;
