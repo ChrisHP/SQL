@@ -1,5 +1,5 @@
-BEGIN TRANSACTION;
-DELETE FROM Books where book_id=103;
-SAVEPOINT sp1;
-ROLLBACK to sp1;
-COMMIT;
+select * from Passengers where sex="female" and Survived=1 and age>30;
+select avg(age) from Passengers where sex="male" AND survived=0;
+select * from Passengers WHERE embarked="C" AND fare BETWEEN 20 AND 50;
+select count(*) from Passengers WHERE survived=1 AND pclass=1;
+select * from Passengers WHERE embarked="C" AND fare > 75;
